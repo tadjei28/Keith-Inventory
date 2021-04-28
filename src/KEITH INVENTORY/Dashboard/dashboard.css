@@ -1,0 +1,53 @@
+.fullboard{
+    background-color: wheat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.leftdash{
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+}
+
+.bars{
+    display: flex;
+}
+
+.maindash{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    background-color: blue;
+   
+}
+
+.navbar{
+    background-color: whitesmoke;
+    
+
+}
+
+.mainbar{
+    background-color: greenyellow;
+    
+
+}
+
+.titlebar{
+    background-color: green;
+    
+
+}
+
+.dashboard{
+    background-color: firebrick;
+}
+
+.foot{
+    background-color: dodgerblue;
+}
