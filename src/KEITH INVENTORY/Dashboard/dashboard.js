@@ -4,46 +4,20 @@ import ('./dashboard.css')
 function Dashboard() {
     return (
         <div className = 'fullboard'>
+          <h1>header</h1>
+          <div>
 
-            <div className = 'title'>
-                <h1>header</h1>
-            </div>
-            <div className='bars'>
-                <div className='leftdash'>
-
-                <div className = 'header'>
-                  <h1>dashboard</h1>
-                </div>
-
-                <div className = 'navbar'>
-                 <h1>dashboard</h1>
-                </div>
-
-                <div className = 'titlebar'>
-                  <h1>dashboard</h1>
-                </div>
-
-
-                <div className='maindash'>
-                
-                  <div className = 'mainbar'>
-                     <h1>dashboard</h1>
-                  </div>
-
-                  <div className='dashboard'>
-                     <h1>dashboard</h1>
-                  </div>
-
-                  <div className='profile'>
-                     <h1>dashboard</h1>
-                  </div>
-
-                </div>
-
-           </div>
-                
+          <div className='leftdash'>
+              <h1>leftdash</h1>
             </div>
 
+            <div className='rightdash'>
+              <h1>rightdash</h1>
+            </div>
+
+          </div>
+
+            
 
             <div className='foot'>
                 <footer>dashboard</footer>
