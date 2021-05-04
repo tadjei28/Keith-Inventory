@@ -8,10 +8,13 @@
 
 
 .login{
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     background-image: url('./loginp.png');
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     /* opacity: 0.5; */
 }
 
@@ -24,12 +27,13 @@
 
 .form{
    background-color: white;
-   width: 280px;
-   margin-left: 980px;
+   width: 240px;
+   /* margin-left: 980px; */
    padding: 20px 30px;
    border-radius: 30px 5px;
    color: dodgerblue;
-   
+   margin-bottom: 80px;
+   margin-right: 40px;
 }
 
 /* .login{

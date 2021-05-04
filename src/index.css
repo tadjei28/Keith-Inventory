@@ -23,8 +23,10 @@ label {
 
 .form-group {
   display: flex;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   margin: 10px;
+  /* background-color:red; */
+  justify-content: space-between;
 }
 
 button {

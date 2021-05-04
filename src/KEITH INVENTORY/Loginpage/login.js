@@ -16,12 +16,31 @@ function Login() {
 
     const goToD = (e) => {
         e.preventDefault();
-        history.push("/dashboard")
+        
+        fetch('http://localhost:5000/api/v1/login', 
+        {
+            method: 'POST',
+            body: JSON.stringify(values),
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        })
+        .then(response => response.json())
+        .then(responseData => {
+            console.log(responseData);
+            
+            if (responseData.message1){
+              history.push("/dashboard")
+          }else{
+              alert(JSON.stringify(responseData))
+          }
+
+        })
     }
 
     const goToSign = (e) => {
         e.preventDefault();
-        history.push("/signup")
+        history.push("/register")
     }
 
     return (
@@ -29,7 +48,7 @@ function Login() {
            <div className= 'form'>
         
                  <h1>Admin Login</h1>
-                 <InputField className='formdiv' type="UserId" label="User ID" name="userid" placeholder="eg; Anita111" onchange={onChange} />
+                 <InputField className='formdiv' type="Username" label="Username" name="username" placeholder="eg; Anita111" onchange={onChange} />
            
                  <InputField className='formdiv' type="Password" label="Password" name="password" placeholder=" " onchange={onChange}/>
            

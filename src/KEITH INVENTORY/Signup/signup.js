@@ -18,7 +18,9 @@ function Signup() {
         e.preventDefault();
         history.push ("/dashboard")
 
-        fetch('http://localhost:5000/api/signup', 
+        
+
+        fetch('http://localhost:5000/api/v1/signup', 
         {
           method: 'POST',
           body: JSON.stringify(values),
@@ -51,13 +53,18 @@ function Signup() {
               image
             </div>
             <h1>Sign Up</h1>
-            <InputField type="text" label="Company Name" name="companyname" placeholder="eg; ABC COMPANY LTD." onchange={onType}/>
+
+            <div>
+            <InputField type="text" label="Company Name" name="companyName" placeholder="eg; ABC COMPANY LTD." onchange={onType}/>
             <InputField type="text" label=" Username" name="username" placeholder="eg; Thelma"  onchange={onType}/>
             <InputField type="email" label=" Email" name="email" placeholder="eg; themmy@mail.com"  onchange={onType}/>
             <InputField type="pasword" label="Password" name="password" placeholder=" "  onchange={onType}/>
-            <InputField type="pasword" label="Confirm Password" name="confirmpassword" placeholder=" "  onchange={onType}/>
+            <InputField type="pasword" label="Confirm Password" name="ConfirmPassword" placeholder=" "  onchange={onType}/>
+            </div>
+
             <Button text = 'Submit' classname='btn' onclick={goToDash}/>
             <h6>Already have an account?</h6>
+            
             <Button text = 'Login' classname='btn'  onclick={goToLogin}/>
 
         </div>

@@ -12,7 +12,7 @@ function Landingpage() {
     }
 
     const goToSignUp =()=>{
-        history.push ('./signup')
+        history.push ('./register')
     }
 
 
