@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+ 
+
+    
+}
+
+
+.login{
+    /* width: 100vw; */
+    height: 100vh;
+    background-image: url('./loginp.png');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* opacity: 0.5; */
+}
+
+
+.formdiv{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form{
+   background-color: white;
+   width: 240px;
+   /* margin-left: 980px; */
+   padding: 20px 30px;
+   border-radius: 30px 5px;
+   color: navy;
+   margin-bottom: 80px;
+   margin-right: 40px;
+}
+
+/* .login{
+    background-image: url('./inve9.jpg');
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    align-content: flex-end;
+} */
